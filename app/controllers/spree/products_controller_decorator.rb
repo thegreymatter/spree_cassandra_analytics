@@ -10,8 +10,8 @@ module Spree
       return unless id.present?
 	
 	  time1 = Time.now;
-	  client = Cassandra.new('Spree', '127.0.0.1:9160')
-	  client.insert(:ProductPageViews, time1.inspect+id,  {'timestamp' => time1.inspect,'product' => id})
+	 # client = Cassandra.new('Spree', '127.0.0.1:9160')
+	 # client.insert(:ProductPageViews, time1.inspect+id,  {'timestamp' => time1.inspect,'product' => id})
     end
   end
 end
