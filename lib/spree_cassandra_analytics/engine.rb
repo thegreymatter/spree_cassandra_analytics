@@ -1,4 +1,4 @@
-module <%= class_name %>
+module SpreeCassandraAnalytics
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
